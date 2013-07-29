@@ -1,0 +1,23 @@
+<head>
+	<title>Smackdown!</title>
+</head>
+
+<body>
+	<div class="jumbotron">
+		Smackdown!
+	</div>
+
+	{{> smackdownsTemplate}}
+
+	{{loginButtons}}
+</body>
+
+<template name="smackdownsTemplate">
+	<div id="smackdowns-list">
+		<ul>
+		{{#each smackdowns}}
+			<li>{{title}}</li>
+		{{/each}}
+		</ul>
+	</div>
+</template>
